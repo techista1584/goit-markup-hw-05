@@ -217,15 +217,15 @@ figure {
   pointer-events: auto;
   opacity: 1;
   transition-property: visibility, opacity;
-  transition-duration: 250ms var(--cubic-bezier);
-  transform: none;
+  transition-duration: 250ms;
+  /* transition:var(--cubic-bezier); */
 }
 
 .modal.is-hidden {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
-  transition: transform 250ms var(--cubic-bezier);
+  /* transition: transform 250ms var(--cubic-bezier); */
 }
 
 .modal-content {
@@ -239,7 +239,10 @@ figure {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   transform: none;
-  transition: transform 250ms var(--cubic-bezier);
+  transition-property:transform;
+  transition-duration:250ms;
+  transition-timing-function: var(--cubic-bezier)
+
 }
 
 .modal.is-hidden.modal-content {
