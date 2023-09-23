@@ -9,7 +9,7 @@
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
   --dairy: #fcfcfc;
-  --cubic-bezier:var(--cubic-bezier)
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -269,11 +269,11 @@ figure {
   height: 8px;
 }
 
-.modal-close:hover{
-  background-color:var(--ocean);
+.modal-close:hover {
+  background-color: var(--ocean);
 }
 
-.modal-close:hover svg{
+.modal-close:hover svg {
   fill: var(--white);
 }
 
