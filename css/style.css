@@ -118,6 +118,7 @@ figure {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
+  transform: translateX(0);
   transition: color 250ms var(--cubic-bezier);
 }
 
@@ -130,6 +131,8 @@ figure {
   position: absolute;
   left: 0;
   bottom: -25px;
+  transform: scaleX(1);
+  transition: width 250ms var(--cubic-bezier);
 }
 
 .nav-list-item-link-active {
@@ -186,6 +189,7 @@ figure {
   border-radius: 4px;
   background: var(--iris);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .main-button {
@@ -236,8 +240,10 @@ figure {
   flex-shrink: 0;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  transform: none;
+  transform: translateY(-50%);
   transition-duration:250ms;
+  position: absolute;
+  top: 50%;
 }
 
 .modal.is-hidden.modal-content {
@@ -425,7 +431,7 @@ figure {
   border: 1px solid var(--light_slate);
   border-radius: 4px;
   color: var(--light_slate);
-  transition: border-color, color, 250ms var(--cubic-bezier);
+  transition: border-color 250ms var(--cubic-bezier);
 }
 
 .customer-list-items:hover {
@@ -438,6 +444,7 @@ figure {
 
 .icon-clients-link {
   color: var(--light_slate);
+  transition: color 250ms var(--cubic-bezier);
 }
 
 .customer-icon {
@@ -445,6 +452,7 @@ figure {
   height: 56px;
   flex-shrink: 0;
   fill: currentColor;
+  transition: fill 250ms var(--cubic-bezier);
 }
 
 .footer {
@@ -655,6 +663,7 @@ figure {
   background-color: var(--iris);
   padding: 40px 32px;
   transition: transform 250ms var(--cubic-bezier);
+  transition-timing-function:ease-in-out;
   transform: translateY(100%);
 }
 
